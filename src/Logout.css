@@ -1,0 +1,4 @@
+.btn-danger:hover {
+    /* Red glow on hover */
+    color: red; /* Change text color to white on hover */
+  }

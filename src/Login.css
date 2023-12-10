@@ -1,0 +1,67 @@
+/* Login.css */
+
+.bg-gray-900 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo {
+    width: 150px; /* Adjust the width as needed */
+  }
+  
+ 
+  
+  .login-container {
+    display: flex;
+    flex: 1;
+    background-color: rgba(0, 128, 0, 0.1); /* Subtle green tint */
+  }
+  
+  .login-image {
+    flex: 1;
+    background: url('./assets/img2.jpg') center/cover;
+  }
+  
+  .login-form {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white for glassmorphism */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  .text-danger {
+    color: #ff0000;
+  }
+  
+  .social {
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout for small screens */
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
+    }
+  
+    .login-image,
+    .login-form {
+      flex: 1;
+    }
+  }
+  

@@ -1,0 +1,37 @@
+/* Todo.css */
+body.modal-open {
+    overflow: hidden;
+  }
+  
+  .modal {
+   
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #def3d9;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+  }
+  
+  .btn-success:hover {
+     /* Green glow on hover */
+    color: green; /* Change text color to white on hover */
+  }
+  
+  /* Delete Button Hover Effect */
+  .btn-danger:hover {
+    /* Red glow on hover */
+    color: red; /* Change text color to white on hover */
+  }
