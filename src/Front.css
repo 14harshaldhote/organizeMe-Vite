@@ -1,0 +1,9 @@
+#cnt2::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  #cnt2::-webkit-scrollbar-thumb {
+    background-color: #3a5e38; /* Replace with your desired green color */
+    border-radius: 4px;
+  }
+  

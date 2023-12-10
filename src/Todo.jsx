@@ -33,7 +33,7 @@ function Todo(props) {
   };
 
   return (
-    <div className="flex justify-between items-center mb-2 px-11" id="cont">
+    <div className="flex justify-between items-center mb-2 px-11 " id="cont">
      
       <div className="list-item-text">
         <p className="text-lg text-green-100">{props.todo.todo}</p>
@@ -48,7 +48,7 @@ function Todo(props) {
         </button>
 
         
-        <button className="btn btn-danger px-2" onClick={handleDelete}>
+        <button className="btn btn-danger px-2" onClick={handleDelete} >
           <FontAwesomeIcon icon={faTrash}  />
         </button>
       </div>
@@ -63,20 +63,19 @@ function Todo(props) {
           </div>
 
         
-          <div className="modal-body">
+          <div className="modal-body flex items-center space-x-4 mx-4">
             <input
-              className="form-control mb-4 custom-input m-5 rounded-md bg-emerald-400 p-2 "
+              className="form-control  custom-input rounded-md bg-emerald-400 bg-opacity-0 "
               value={input}
               placeholder={props.todo.todo}
               onChange={(event) => setInput(event.target.value)}
               disabled={!open}
             />
-          </div>
-          <div className="modal-footer px-6 ">
             <button className="btn btn-primary " onClick={updateTodo} disabled={!open}>
               <FontAwesomeIcon icon={faCheck} size = '2x'/>
             </button>
           </div>
+          
         </div>
       </div>
     </div>
