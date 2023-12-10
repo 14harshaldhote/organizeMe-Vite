@@ -80,7 +80,7 @@ const Login = () => {
                             type="text"
                             id="username"
                             className="custom-input mt-2"
-                            style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
+                            style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
                         />
 
                         <label htmlFor="password" className="block mt-3 text-gray-300 text-md font-medium">Password</label>
