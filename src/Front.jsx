@@ -56,7 +56,7 @@ const Front = () => {
 
   return (
     <div className="bg-gif-container  " style={{ backgroundImage: `url(${headerGif})`, backgroundSize: 'cover' }}>
-      
+
       <div className='flex items-center justify-between p-3 bg-black text-white opacity-80 '>
         <div className="flex items-center p-2">
           <img id="logo" src={logo1} alt="Mountain Icon" className=" h-20" />
@@ -68,7 +68,7 @@ const Front = () => {
       </div>
 
       <div className='bg-gray-900 bg-opacity-40 '>
-       
+
         <div id="cnt1" className="container mx-auto p-4 items-center w-full">
           <div className="mb-4 m-7">
             <h1 className="text-center text-3xl font-bold text-green-100">Hello Programmer 🚀!</h1>
@@ -105,20 +105,20 @@ const Front = () => {
           </ul>
         </div> */}
         <div
-  id="cnt2"
-  className="container mx-auto mt-32 max-h-96 px-20 p-4 rounded-md overflow-y-auto scrollbar-thin scrollbar-thumb-green-500"
->
-  <ul className="list-group px-12 mx-16">
-    {todos.map((todo) => (
-      <li
-        key={todo.id}
-        className="list-group-item bg-gray-800 bg-opacity-5 backdrop-blur-sm mb-5 border rounded-md p-4 text-green"
-      >
-        <Todo todo={todo} isModalOpen={open} />
-      </li>
-    ))}
-  </ul>
-</div>
+          id="cnt2"
+          className="container mx-auto  max-h-96 px-20 p-4 rounded-md overflow-y-auto scrollbar-thin scrollbar-thumb-green-500"
+        >
+          <ul className="list-group px-12 mx-16">
+            {todos.map((todo) => (
+              <li
+                key={todo.id}
+                className="list-group-item bg-gray-800 bg-opacity-5 backdrop-blur-sm mb-5 border rounded-md p-4 text-green"
+              >
+                <Todo todo={todo} isModalOpen={open} />
+              </li>
+            ))}
+          </ul>
+        </div>
 
       </div>
     </div>

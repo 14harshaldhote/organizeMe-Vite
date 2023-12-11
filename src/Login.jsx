@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import logo1 from "./assets/logo1.png";
 import google from "./assets/google.png";
 import loginGif from "./assets/img2.jpg";
-import './Login.css'; // Import the CSS file
+import './Login.css'; 
 
 const Login = () => {
     const auth = getAuth();
@@ -70,20 +70,20 @@ const Login = () => {
 
                 <div className="md:w-1/2 h-screen bg-cover bg-center relative" style={{ backgroundImage: `url(${loginGif})`, opacity: 0.85 }}>
                     <div className="flex flex-col justify-center items-center h-full bg-gray-900 bg-opacity-50 p-8  shadow-lg" style={{ backdropFilter: 'blur(10px)', backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}>
-                        <h2 className="text-2xl font-semibold text-white mb-4">Namaskaram 🙏🏾</h2>
+                        <h2 className="text-2xl font-semibold text-black mb-4">Namaskaram 🙏🏾</h2>
                         {error && <p className="text-danger mb-4">{error}</p>}
 
-                        <label htmlFor="username" className="block mt-3 text-gray-300 text-md font-medium">Username</label>
+                        <label htmlFor="username" className="block mt-3 text-black text-md font-medium">Username</label>
                         <input
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             type="text"
                             id="username"
-                            className="custom-input mt-2"
+                            className="custom-input mt-2 "
                             style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
                         />
 
-                        <label htmlFor="password" className="block mt-3 text-gray-300 text-md font-medium">Password</label>
+                        <label htmlFor="password" className="block mt-3  text-black text-md font-medium">Password</label>
                         <input
                             value={password}
                             onChange={(e) => setPassword(e.target.value)}
@@ -93,11 +93,11 @@ const Login = () => {
                             style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
                         />
 
-                        <div className="social mt-4 flex justify-around">
-                            <button onClick={signInWithEmailPassword} className="btn btn-primary bg-lime-600 px-6 rounded-md">
+                        <div className="social mt-4 flex justify-around mx-6">
+                            <button onClick={signInWithEmailPassword} className="btn btn-primary bg-lime-600 px-6 rounded-md ">
                                 Login
                             </button>
-                            <div className='mt-2'>
+                            <div className='mt-2 mx-3'>
                                 <img onClick={signInWithGoogle} id="logo" src={google} alt="google" style={{ width: '24px', height: '24px' }} />
                             </div>
                         </div>
